@@ -41,3 +41,31 @@ Il progetto verrà valutato dal professore Gargantini, docente di ingegneria del
 Strumenti e comunicazione:
 Il team utilizza GitHub per il controllo di versione e la gestione del codice. La maggior parte degli incontri e dei confronti avviene di persona, facilitando una comunicazione diretta e collaborativa.
 
+4. Standard, linee guida e procedure
+Convenzioni di codifica:
+Il team segue le convenzioni ufficiali di Oracle per Java, incluse regole come:
+
+Classi in PascalCase.
+Variabili e metodi in camelCase.
+Costanti in MAIUSCOLO_CON_SOTTOLINEATURE.
+Strumenti di sviluppo:
+Il progetto utilizza Maven per la gestione delle dipendenze e il controllo del ciclo di build. Il repository è gestito su GitHub per il controllo di versione.
+
+Gestione della documentazione:
+Anche se la documentazione non è un focus primario, il team utilizza Javadoc per mantenere una documentazione minima del codice. Nicolò si occupa principalmente della documentazione di progetto.
+
+Code review:
+Le modifiche al codice vengono sottoposte a revisione tramite GitHub, per garantire la qualità del codice e prevenire errori.
+
+Controllo di versione:
+Il team utilizza GitHub per gestire le versioni del progetto e tenere traccia delle modifiche.
+
+5. Attività di gestione
+Monitoraggio del progresso:
+Il team utilizza Daily Stand-up Meeting per confrontarsi quotidianamente sui progressi e identificare eventuali ostacoli. Inoltre, dopo ogni Sprint, viene svolta una Sprint Review per esaminare il lavoro completato e pianificare le attività successive.
+
+Stabilire le priorità:
+Le funzionalità principali, come l'animazione e il calcolo del tempo, hanno la priorità. Una volta completate, il team procede con l'aggiunta di altre funzionalità, come le curve preimpostate e le ottimizzazioni.
+
+Gestione dei problemi:
+I problemi vengono risolti attraverso una comunicazione diretta all'interno del team. Se il problema non può essere risolto internamente, viene richiesto aiuto al professore Gargantini.
