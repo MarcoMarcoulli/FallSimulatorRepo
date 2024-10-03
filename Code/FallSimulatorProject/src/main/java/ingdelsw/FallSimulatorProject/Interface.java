@@ -19,17 +19,20 @@ public class Interface extends Application {
     
     @Override
     public void start(Stage primaryStage) {
+    	
+    	// Creare il gestore di input
+        InputManager inputManager = new InputManager();
     	 
-    	 BorderPane borderPane = new BorderPane();//imposto il layout della finestra
+    	BorderPane borderPane = new BorderPane();//imposto il layout della finestra
     	 
-    	 // Pannello di sinistra per i pulsanti
-         VBox leftPanel = new VBox(20);  // 10 pixel di spaziatura tra i pulsanti
+    	// Pannello di sinistra per i pulsanti
+        VBox leftPanel = new VBox(20);  // 10 pixel di spaziatura tra i pulsanti
          
-         //definizioni pulsanti
-         Button buttonCycloid = new Button("Cicloide");  
-         Button buttonCircle = new Button("Circonferenza");
-         Button buttonParabola = new Button("Parabola");
-         Button startSimulation = new Button("\u25B6"); // Simbolo di Play (triangolo)
+        //definizioni pulsanti
+        Button buttonCycloid = new Button("Cicloide");  
+        Button buttonCircle = new Button("Circonferenza");
+        Button buttonParabola = new Button("Parabola");
+        Button startSimulation = new Button("\u25B6"); // Simbolo di Play (triangolo)
     
         // Aggiungiamo i pulsanti al pannello di sinistra
         leftPanel.getChildren().addAll(buttonCycloid, buttonCircle, buttonParabola);
@@ -38,6 +41,7 @@ public class Interface extends Application {
         Pane rightPanel = new Pane();
         rightPanel.setStyle("-fx-background-color: lightgray;"); // Colore di sfondo
         rightPanel.setMinSize(300, 300);  // Impostiamo la dimensione minima
+        rightPanel.setOnMouseClicked(inputManager::getPointClick); // Collegare il gestore del click del mouse
         
         // configurazione del layout
         borderPane.setLeft(leftPanel);
