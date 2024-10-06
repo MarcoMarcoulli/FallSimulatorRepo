@@ -1,45 +1,31 @@
 1. Introduzione
-Nome del progetto: FallSimulator
+Nome del progetto: Fall Simulator
 
 Obiettivo del progetto:
-Il progetto FallSimulator ha l’obiettivo di studiare la caduta libera lungo una traiettoria definita. L’aspetto chiave è che, una volta determinata la traiettoria, sarà possibile calcolare anche il tempo "t" necessario per percorrere la curva.
+Il progetto ha l’obiettivo di simulare il moto di caduta libera lungo curve di corpi su cui agisce la sola gravità; calcolando i parametri del moto tra cui di particolare interesse il tempo totale di caduta.
 
 Motivazione e contesto:
-Il problema che ha portato allo sviluppo di FallSimulator è quello della brachistocrona, una questione classica di ottimizzazione che chiede di trovare la traiettoria ideale per collegare due punti, minimizzando il tempo di percorrenza. Questo problema è stato risolto matematicamente e dimostrato attraverso l’applicazione, rendendo possibile uno studio più approfondito delle traiettorie.
+La questione che ha dato origine a Fall Simulator è il Problema della Brachistocrona (Johann Bernoulli, 1696),uno storico problema di ottimizzazione che richiede di trovare la curva che minimizza il tempo per percorrere lo spazio tra due punti che un corpo in caduta sotto l'effetto della gravità impiega per percorrere lo spazio tra due punti.Il problema si risolve matematicamente con la teoria del Calcolo delle Variazioni, ottenendo che la soluzione ottimale è la curva cicloide, ovvero la traiettoria tracciata dal moto di un punto di una circonferenza che rotola. Il progetto mira a mostrare accuratamente la meccanica del moto in questione e analizzarne i parametri, grazie a calcoli numerici precisi che ricreano il modello del fenomeno fisico. 
 
 Stakeholder:
-Il team di sviluppo è composto da due sviluppatori, Marco Locatelli e Nava Nicolò, che lavorano in stretta collaborazione e si dividono equamente i compiti del progetto.
+Persone interessate all' analisi simulativa di un modello di fenomeno fisico legato a uno storico problema di fisica matematica. 
+Figure educative che vogliono insegnare il Problema o il fenomeno fisico in modo visivo e chiaro. 
 
 Sintesi del progetto:
 Il software permette di selezionare due punti nello spazio (con la possibilità di includere punti intermedi) e generare una curva che passa per questi punti. Successivamente, anima una sfera lungo questa curva per studiare il suo comportamento. FallSimulator propone inoltre curve preimpostate, come parabole, rette e cicloidi, per analisi rapide.
 
 2. Modello di Processo
-Il progetto FallSimulator segue un approccio Agile SCRUM, scelto per la sua flessibilità, dato che alcune funzionalità non sono ancora completamente definite.
-
-Le attività principali sono:
-
-Analisi dei requisiti
-Progettazione
-Prototipazione rapida
-Sviluppo
-Documentazione
-Test
-Rilascio
-Le milestone principali del progetto sono:
-
-Prototipo funzionante
-Test e animazione
-Rilascio finale
-Per misurare i progressi, il team utilizza il metodo dei Daily Stand-up Meeting, con un backlog che aiuta a tenere traccia delle attività da completare e a gestire le priorità.
+Per sviluppare Fall Simulator viene seguito il modello di ciclo di vita della prototipazione evolutiva, addentrandosi presto nei dettagli e nelle problematiche per rivelare fin da subito le questione che richiedono il maggiore sforzo, le quali verranno affrontate in modo più pianificato, con l'obbiettivo di aggiustare e fare evolvere il prototipo verso il software finale.
+l'approccio allo sviluppo è di tipo Agile piuttosto che basato sulla pianificazione, in particolare nella gestione del processo. 
 
 3. Organizzazione del progetto
-Il team di sviluppo del progetto FallSimulator è composto da due sviluppatori, Marco Locatelli e Nava Nicolò, che collaborano su tutti gli aspetti del progetto. Nicolò ha un interesse principale per la documentazione e il project plan, mentre Marco è più focalizzato sullo sviluppo del codice. Entrambi partecipano comunque a diverse attività del progetto.
+Il team di sviluppo del progetto FallSimulator è composto da due sviluppatori, Marco Locatelli e Nava Nicolò, che collaborano su tutti gli aspetti del progetto. Nicolò ha il focus sull' organizzazione del processo, la documentazione la gestione del progetto,e il testing del sistema; mentre Marco è focalizzato sull'analisi del dominio, la progettazione, modellazione e implementazione del software. Entrambi collaborano e revisionano il lavoro dell'altro.
 
 Revisore:
 Il progetto verrà valutato dal professore Gargantini, docente di ingegneria del software.
 
 Strumenti e comunicazione:
-Il team utilizza GitHub per il controllo di versione e la gestione del codice. La maggior parte degli incontri e dei confronti avviene di persona, facilitando una comunicazione diretta e collaborativa.
+Il team utilizza GitHub per il controllo di versione e la gestione del codice. La maggior parte degli incontri e dei confronti avviene di persona, facilitando una comunicazione diretta e collaborativa, oltre a mezzi di comunicazione rapidi e informali.
 
 4. Standard, linee guida e procedure
 Convenzioni di codifica:
@@ -62,7 +48,6 @@ Il team utilizza GitHub per gestire le versioni del progetto e tenere traccia de
 
 5. Attività di gestione
 Monitoraggio del progresso:
-Il team utilizza Daily Stand-up Meeting per confrontarsi quotidianamente sui progressi e identificare eventuali ostacoli. Inoltre, dopo ogni Sprint, viene svolta una Sprint Review per esaminare il lavoro completato e pianificare le attività successive.
 
 Stabilire le priorità:
 Le funzionalità principali, come l'animazione e il calcolo del tempo, hanno la priorità. Una volta completate, il team procede con l'aggiunta di altre funzionalità, come le curve preimpostate e le ottimizzazioni.
