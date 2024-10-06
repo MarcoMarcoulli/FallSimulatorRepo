@@ -23,10 +23,10 @@ public class Interface extends Application {
     	// Creare il gestore di input
         InputManager inputManager = new InputManager();
     	 
-    	BorderPane borderPane = new BorderPane();//imposto il layout della finestra
+    	BorderPane root = new BorderPane();//imposto il layout della finestra
     	 
     	// Pannello di sinistra per i pulsanti
-        VBox leftPanel = new VBox(20);  // 10 pixel di spaziatura tra i pulsanti
+        VBox leftPane = createLeftPane();  // 10 pixel di spaziatura tra i pulsanti
          
         //definizioni pulsanti
         Button buttonCycloid = new Button("Cicloide");  
@@ -35,25 +35,49 @@ public class Interface extends Application {
         Button startSimulation = new Button("\u25B6"); // Simbolo di Play (triangolo)
     
         // Aggiungiamo i pulsanti al pannello di sinistra
-        leftPanel.getChildren().addAll(buttonCycloid, buttonCircle, buttonParabola);
+        leftPane.getChildren().addAll(buttonCycloid, buttonCircle, buttonParabola);
 
         // Pannello di destra che rileva i click del mouse
-        Pane rightPanel = new Pane();
-        rightPanel.setStyle("-fx-background-color: lightgray;"); // Colore di sfondo
-        rightPanel.setMinSize(300, 300);  // Impostiamo la dimensione minima
-        rightPanel.setOnMouseClicked(inputManager::getPointClick); // Collegare il gestore del click del mouse
+        Pane rightPane = new Pane();
+        rightPane.setStyle("-fx-background-color: lightgray;"); // Colore di sfondo
+        rightPane.setMinSize(300, 300);  // Impostiamo la dimensione minima
+        rightPane.setOnMouseClicked(inputManager::getPointClick); // Collegare il gestore del click del mouse
         
         // configurazione del layout
-        borderPane.setLeft(leftPanel);
-        borderPane.setCenter(rightPanel);
+        root.setLeft(leftPane);
+        root.setCenter(rightPane);
         
         // Creiamo la scena
-        Scene scene = new Scene(borderPane, 600, 400);
+        Scene scene = new Scene(root, 600, 400);
         
         // Impostiamo lo stage e mostriamo la finestra
         primaryStage.setTitle("Fall Simulator");
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+    
+    private VBox createLeftPane() {
+        VBox leftPane = new VBox(10);  // Layout verticale con spaziatura di 10px tra i nodi
+        leftPane.setPadding(new Insets(10));  // Imposta un padding interno di 10px
+        leftPane.setPrefWidth(200);  // Imposta la larghezza preferita a 200px
+        leftPane.setStyle("-fx-border-color: black;");  // Aggiunge un bordo al pannello
+
+        // Creazione dell'etichetta per le istruzioni
+        Label instructionsLabel = new Label("Inserisci i punti cliccando\nsul pannello a destra.");
+        instructionsLabel.setWrapText(true);  // Consente il testo su più righe
+
+        // Creazione dei pulsanti per resettare i punti e disegnare la spline
+        Button resetButton = new Button("Resetta Punti");
+        Button drawButton = new Button("Fine Immissione");
+
+        // Salva i pulsanti nei rispettivi campi in modo che possano essere usati in InputManager
+        setResetButton(resetButton);
+        setDrawButton(drawButton);
+
+        // Allineamento al top e aggiunta dei componenti al pannello di sinistra
+        leftPane.setAlignment(Pos.TOP_CENTER);
+        leftPane.getChildren().addAll(instructionsLabel, resetButton, drawButton);
+        return leftPane;  // Restituisce il pannello configurato
     }
 
     public static void main(String[] args) {

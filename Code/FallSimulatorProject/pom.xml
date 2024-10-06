@@ -12,6 +12,10 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>23</maven.compiler.source>
+	<maven.compiler.target>23</maven.compiler.target>
+	<maven.compiler.release>23</maven.compiler.release>
+	<javafx.version>23</javafx.version>
   </properties>
 
   <dependencies>
@@ -33,12 +37,6 @@
         <artifactId>javafx-controls</artifactId>
         <version>23</version> 
     </dependency>
-    <!-- JavaFX FXML Module -->
-    <dependency>
-        <groupId>org.openjfx</groupId>
-        <artifactId>javafx-fxml</artifactId>
-        <version>23</version>
-    </dependency>
     <!-- JavaFX Graphics Module -->
     <dependency>
         <groupId>org.openjfx</groupId>
@@ -54,6 +52,7 @@
             <version>0.0.8</version> 
             <executions>
                 <execution>
+                	<phase>package</phase>
                     <goals>
                         <goal>run</goal>
                     </goals>
