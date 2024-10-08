@@ -24,7 +24,7 @@ Condizione: almeno una curva è stata inserita</body>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_pYVAsIQjEe-gKancSkmJvg" name="Analizza la caduta lungo una cicloide">
       <generalization xmi:type="uml:Generalization" xmi:id="_BUfpcIQlEe-gKancSkmJvg" general="_QPznoIQkEe-gKancSkmJvg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_tZjacIQjEe-gKancSkmJvg" name="Analizza la caduta lungo una Parabola">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tZjacIQjEe-gKancSkmJvg" name="Analizza la caduta lungo una parabola">
       <generalization xmi:type="uml:Generalization" xmi:id="_CALDsIQlEe-gKancSkmJvg" general="_QPznoIQkEe-gKancSkmJvg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_-GQBQIQjEe-gKancSkmJvg" name="Analizza e confronta le cadute lungo due o più curve ">
