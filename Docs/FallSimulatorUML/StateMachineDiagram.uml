@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ayi0EImqEe-vl4BFWk1dCA" name="FallSimulatorUML">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_a0xosImqEe-vl4BFWk1dCA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_crpDsImqEe-vl4BFWk1dCA" name="FallSimulator">
+    <region xmi:type="uml:Region" xmi:id="_c9VQoImqEe-vl4BFWk1dCA" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_2bqCgIoVEe-KEOEQcQivyg" kind="local" source="_e10cQImqEe-vl4BFWk1dCA" target="_reWqEImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_7-jDUIoVEe-KEOEQcQivyg" source="_reWqEImqEe-vl4BFWk1dCA" target="_e10cQImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_918CwIoVEe-KEOEQcQivyg" source="_reWqEImqEe-vl4BFWk1dCA" target="_uq0mEImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_CTxgAIoWEe-KEOEQcQivyg" source="_uq0mEImqEe-vl4BFWk1dCA" target="_oxPg8IoVEe-KEOEQcQivyg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_D-6zMIoWEe-KEOEQcQivyg" source="_uq0mEImqEe-vl4BFWk1dCA" target="_3PU9wImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_FHXB8IoWEe-KEOEQcQivyg" source="_uq0mEImqEe-vl4BFWk1dCA" target="_y0ETYImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_JZgzoIoWEe-KEOEQcQivyg" source="_3PU9wImqEe-vl4BFWk1dCA" target="_7XTfwImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_K9AmsIoWEe-KEOEQcQivyg" source="_7XTfwImqEe-vl4BFWk1dCA" target="_-TqjMImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ORwU8IoWEe-KEOEQcQivyg" source="_-TqjMImqEe-vl4BFWk1dCA" target="__d6IwImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_na7_4IoWEe-KEOEQcQivyg" source="__d6IwImqEe-vl4BFWk1dCA" target="_e10cQImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_qIDGYIoWEe-KEOEQcQivyg" source="__d6IwImqEe-vl4BFWk1dCA" target="_uq0mEImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_wQcoAIoWEe-KEOEQcQivyg" source="_oxPg8IoVEe-KEOEQcQivyg" target="_3PU9wImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_yf6wQIoWEe-KEOEQcQivyg" source="_y0ETYImqEe-vl4BFWk1dCA" target="_3PU9wImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_GUkmgIoXEe-KEOEQcQivyg" source="_xNaeoImqEe-vl4BFWk1dCA" target="_e10cQImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_L8wXAIoXEe-KEOEQcQivyg" source="_uq0mEImqEe-vl4BFWk1dCA" target="_e10cQImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_QFFeUIoXEe-KEOEQcQivyg" source="_oxPg8IoVEe-KEOEQcQivyg" target="_e10cQImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_RzcdkIoXEe-KEOEQcQivyg" source="_y0ETYImqEe-vl4BFWk1dCA" target="_e10cQImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_TIngwIoXEe-KEOEQcQivyg" source="__d6IwImqEe-vl4BFWk1dCA" target="_reWqEImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_leGqUIoXEe-KEOEQcQivyg" source="_7XTfwImqEe-vl4BFWk1dCA" target="_e10cQImqEe-vl4BFWk1dCA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_nbHJkIoXEe-KEOEQcQivyg" source="_3PU9wImqEe-vl4BFWk1dCA" target="_e10cQImqEe-vl4BFWk1dCA"/>
+      <subvertex xmi:type="uml:State" xmi:id="_e10cQImqEe-vl4BFWk1dCA" name="WAITING_FOR_START_POINT"/>
+      <subvertex xmi:type="uml:State" xmi:id="_reWqEImqEe-vl4BFWk1dCA" name="WAITING_FOR_END_POINT"/>
+      <subvertex xmi:type="uml:State" xmi:id="_uq0mEImqEe-vl4BFWk1dCA" name="CHOOSING_CURVE"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_xNaeoImqEe-vl4BFWk1dCA" name="entry"/>
+      <subvertex xmi:type="uml:State" xmi:id="_y0ETYImqEe-vl4BFWk1dCA" name="WAITING_FOR_INTERMEDIATE_POINTS"/>
+      <subvertex xmi:type="uml:State" xmi:id="_3PU9wImqEe-vl4BFWk1dCA" name="CHOOSING_MASS"/>
+      <subvertex xmi:type="uml:State" xmi:id="_7XTfwImqEe-vl4BFWk1dCA" name="WAITING_TO_START_SIMULATION"/>
+      <subvertex xmi:type="uml:State" xmi:id="_-TqjMImqEe-vl4BFWk1dCA" name="SIMULATING"/>
+      <subvertex xmi:type="uml:State" xmi:id="__d6IwImqEe-vl4BFWk1dCA" name="SHOWING_SIMULATION_RESULTS"/>
+      <subvertex xmi:type="uml:State" xmi:id="_oxPg8IoVEe-KEOEQcQivyg" name="CHOOSING_RADIUS"/>
+    </region>
+  </packagedElement>
+</uml:Model>

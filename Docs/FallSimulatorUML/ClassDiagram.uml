@@ -3,12 +3,7 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_iGoX4IQnEe-gKancSkmJvg">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Class" xmi:id="_UR0uwIQoEe-gKancSkmJvg" name="Mass">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_deQ-wIVdEe-ICsieOKbwTg" name="Curve" type="_VAAqcIQoEe-gKancSkmJvg" association="_deMtUIVdEe-ICsieOKbwTg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_deRl0IVdEe-ICsieOKbwTg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_deSM4IVdEe-ICsieOKbwTg" value="1"/>
-    </ownedAttribute>
-  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UR0uwIQoEe-gKancSkmJvg" name="Mass"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_VAAqcIQoEe-gKancSkmJvg" name="Curve" isAbstract="true"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_WqpAQIQoEe-gKancSkmJvg" name="Parabola">
     <generalization xmi:type="uml:Generalization" xmi:id="_rImn0IVdEe-ICsieOKbwTg" general="_VAAqcIQoEe-gKancSkmJvg"/>
@@ -23,16 +18,15 @@
     <generalization xmi:type="uml:Generalization" xmi:id="_pjlx0IVdEe-ICsieOKbwTg" general="_VAAqcIQoEe-gKancSkmJvg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_bEmqIIQoEe-gKancSkmJvg" name="Interface">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_SZtsMIVdEe-ICsieOKbwTg" name="inputmanager" type="_b-T5UIQoEe-gKancSkmJvg" association="_SZVRsIVdEe-ICsieOKbwTg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SaH74IVdEe-ICsieOKbwTg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SaWlYIVdEe-ICsieOKbwTg" value="1"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SZtsMIVdEe-ICsieOKbwTg" name="inputmanager" type="_b-T5UIQoEe-gKancSkmJvg" association="_SZVRsIVdEe-ICsieOKbwTg"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Y69ysIVdEe-ICsieOKbwTg" name="simulationmanager" type="_U2bmQIVdEe-ICsieOKbwTg" association="_Y67WcIVdEe-ICsieOKbwTg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y6-ZwIVdEe-ICsieOKbwTg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y6-ZwYVdEe-ICsieOKbwTg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wO9FkImaEe-vl4BFWk1dCA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wPZxgImaEe-vl4BFWk1dCA" value="*"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_b-T5UIQoEe-gKancSkmJvg" name="InputManager"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_b-T5UIQoEe-gKancSkmJvg" name="InputManager">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_74AMUImaEe-vl4BFWk1dCA" name="Property1" visibility="public"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_SZVRsIVdEe-ICsieOKbwTg" memberEnd="_SZtsMIVdEe-ICsieOKbwTg _Sag9cIVdEe-ICsieOKbwTg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SZozsIVdEe-ICsieOKbwTg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SZpawIVdEe-ICsieOKbwTg" key="nature" value="UML_Nature"/>
@@ -40,10 +34,8 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_Sag9cIVdEe-ICsieOKbwTg" name="interface" type="_bEmqIIQoEe-gKancSkmJvg" association="_SZVRsIVdEe-ICsieOKbwTg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_U2bmQIVdEe-ICsieOKbwTg" name="SimulationManager">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_bqjlcIVdEe-ICsieOKbwTg" name="mass" type="_UR0uwIQoEe-gKancSkmJvg" association="_bqfUAIVdEe-ICsieOKbwTg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bqkMgIVdEe-ICsieOKbwTg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bqkzkIVdEe-ICsieOKbwTg" value="1"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bqjlcIVdEe-ICsieOKbwTg" name="mass" type="_UR0uwIQoEe-gKancSkmJvg" association="_bqfUAIVdEe-ICsieOKbwTg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_deQ-wIVdEe-ICsieOKbwTg" name="Curve" type="_VAAqcIQoEe-gKancSkmJvg" association="_deMtUIVdEe-ICsieOKbwTg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_Y67WcIVdEe-ICsieOKbwTg" memberEnd="_Y69ysIVdEe-ICsieOKbwTg _Y6-ZwoVdEe-ICsieOKbwTg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Y69LoIVdEe-ICsieOKbwTg" source="org.eclipse.papyrus">
@@ -61,6 +53,6 @@
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dePwoIVdEe-ICsieOKbwTg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_deQXsIVdEe-ICsieOKbwTg" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_deSz8IVdEe-ICsieOKbwTg" name="mass" type="_UR0uwIQoEe-gKancSkmJvg" association="_deMtUIVdEe-ICsieOKbwTg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_deSz8IVdEe-ICsieOKbwTg" name="mass" type="_U2bmQIVdEe-ICsieOKbwTg" association="_deMtUIVdEe-ICsieOKbwTg"/>
   </packagedElement>
 </uml:Model>
